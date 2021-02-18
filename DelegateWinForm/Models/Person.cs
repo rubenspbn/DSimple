@@ -16,7 +16,7 @@ namespace DelegateWinForm.Models
         {
             return $"{FirstName,-20}{LastName,-25}\t{Age,-5}";
         }
-        public string ToString(PersonFormat format)
+        public string ToString(Func<Person,string> format)
         {
             if (format!=null)
             {

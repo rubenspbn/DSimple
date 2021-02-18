@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace DelegateWinForm
 {
-    public delegate string PersonFormat(Person input);
+    //public delegate string PersonFormat(Person input);
     public partial class Form1 : Form
     {
-        PersonFormat proc;
+        Func<Person,string> proc;
         public Form1()
         {
             InitializeComponent();
